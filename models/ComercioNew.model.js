@@ -1,13 +1,10 @@
 const mongosse = require("mongoose");
 const { Schema } = mongosse;
-//esta es la manera de correcta de crear un model
-//instanciando la clase Schema
-const BreakingNewSchema = new Schema(
+const ComercioNewSchema = new Schema(
   {
     title: { type: String },
     link: { type: String },
   },
   { timestamps: { createdAt: true, updatedAt: true } }
 );
-
-module.exports = mongosse.model("BreakingNew", BreakingNewSchema);
+module.exports = mongosse.model("ComercioNew", ComercioNewSchema);
